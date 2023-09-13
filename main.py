@@ -60,7 +60,7 @@ st.title('This app predicts whether person could have survived on Titanic or not
 dv = pd.DataFrame(data_vis, index = ['Information about person'])
 df = pd.DataFrame(data, index = ['Information about person'])
 st.dataframe(dv)
-train_base = pd.read_csv('C:/Users/ADMIN/Downloads/train.csv')
+train_base = pd.read_csv('train.csv')
 train = train_base.copy()
 
 train['Age'] = train[['Age', 'Pclass']].apply(impute_age, axis=1)
